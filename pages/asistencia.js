@@ -1,14 +1,14 @@
-import Head from 'next/head'
+
 import Layout from '../components/layout/Layout';
 
-const Index = () => {
+const Asistencia = () => {
   return (
     <div>
       <Layout>
-        <h1>Desde Nostros</h1>
+        <h1>Desde Asistencia</h1>
       </Layout>
     </div>
   );
 }
 
-export default Index;
+export default Asistencia;
