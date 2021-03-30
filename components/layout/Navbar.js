@@ -2,6 +2,9 @@ import React from 'react';
 import Link from 'next/link'
 
 const Navbar = () => {
+    
+    const [navbarOpen, setNavbarOpen] = React.useState(false);
+    
     return ( 
         
         <header>
@@ -17,16 +20,16 @@ const Navbar = () => {
                         <button
                         className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent  block lg:hidden outline-none focus:outline-none"
                         type="button"
-                        // onClick={() => setNavbarOpen(!navbarOpen)}
+                        onClick={() => setNavbarOpen(!navbarOpen)}
                         >
                         <i className="fas fa-bars"></i>
                         </button>
                     </div>
                 <div
-                    // className={
-                    // "lg:flex flex-grow items-center" +
-                    // (navbarOpen ? " flex" : " hidden")
-                    // }
+                    className={
+                    "lg:flex flex-grow items-center" +
+                    (navbarOpen ? " flex" : " hidden")
+                    }
                     id="example-navbar-danger"
                 >
                     <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
