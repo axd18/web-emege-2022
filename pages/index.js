@@ -260,18 +260,22 @@ const Index = () => {
           </div>
           <div className="md:flex">
           {
-            termos.map(({title, aislacion, potencia, tiraje }) => (
+            termos.map(({title, aislacion, potencia, tiraje, conexion, ancho, alto, image }) => (
 
               <div className="flex flex-wrap md:w-1/3">
                 <div className="p-4">
                   <div className="h-full rounded-lg overflow-hidden shadow-md">
-                    <img className="lg:h-auto md:h-auto w-auto object-cover object-center" src="/../img/rs-120.jpg" alt="blog"/>
+                    {/* <img className="lg:h-auto md:h-auto w-auto object-cover object-center" src="/../img/rs-120.jpg" alt="blog"/> */}
+                    <img className="lg:h-auto md:h-auto w-auto object-cover object-center" src={image} alt="producto"/>
                     <div className="p-6 bg-white">
                       <h1 className="title-font text-3xl font-bold text-gray-900 mb-3">{title}</h1>
-                      <ul className="leading-relaxed mb-3">
-                        <li className="font-medium">{aislacion}</li>
-                        <li className="font-medium">{potencia}</li>
-                        <li className="font-medium">{tiraje}</li>
+                      <ul className="leading-relaxed mb-3 font-normal">
+                        <li>{aislacion}</li>
+                        <li>{potencia}</li>
+                        <li>{tiraje}</li>
+                        <li>{conexion}</li>
+                        <li>{ancho}</li>
+                        <li>{alto}</li>
                       </ul>
                       <div className="flex items-center flex-wrap ">
                       <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
