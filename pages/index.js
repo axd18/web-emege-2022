@@ -1,12 +1,14 @@
 // import Head from 'next/head'
 import Layout from '../components/layout/Layout';
 import { patagonia, euro, termos } from '../cards'
+import  Navbar  from '../components/layout/Navbar'
 
 const Index = () => {
   return (
     <div>
       <Layout>
         {/* Main */}
+        <Navbar />
         <div className="">
               <img src="/img-main-euro.jpg"/>
         </div>

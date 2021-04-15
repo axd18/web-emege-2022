@@ -1,15 +1,18 @@
 import Layout from '../components/layout/Layout';
+import  Navbar  from '../components/layout/Navbar'
 
 const Contacto = () => {
   return (
     <div>
-      <Layout></Layout>
-        <section class=" text-gray-600 body-font relative">
+      <Navbar />
+      <Layout>
+        <div>
+        <section class="text-gray-600 body-font ">
           <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-12">
-              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contacto</h1>
+            <div class="flex flex-col text-center w-full mb-12 mt-24">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-600">Solicitud de Servicio técnico</h1>
               <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Si necesitás un servicio post venta en cualquier lugar del país,
-                por favor completá el formulario o comunicate o comunicate con nosotros a través de nuestras vías de contacto: Teléfono:00000 / Email: info@emege.ar
+                por favor completá el formulario o comunicate con nosotros a través de nuestras vías de contacto: Teléfono:00000 / Email: info@emege.ar
                 y en breve te contactaremos.</p>
             </div>
           <div class="bg-white lg:w-1/2 md:w-2/3 mx-auto">
@@ -22,7 +25,7 @@ const Contacto = () => {
             </div>
             <div class="p-2 md:w-1/2 w-full">
               <div class="relative">
-                <label for="name" class="leading-7 text-sm text-gray-600">Direciión (calle y número)</label>
+                <label for="name" class="leading-7 text-sm text-gray-600">Dirección (calle y número)</label>
                 <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></input>
               </div>
             </div>
@@ -74,18 +77,43 @@ const Contacto = () => {
               <option>Euro TB o TBU 5400 kcal.</option>
               <option>Euro Sin salida 5000 kcal.</option>
               <option>Euro Sin salida 8000 kcal.</option>
+              <option>Termotanque a gas 120 lts.</option>
+              <option>Termotanque a gas 80 lts.</option>
+              <option>Termotanque a gas 50 lts.</option>
+              <option>Termotanque eléctrico 95 lts.</option>
+              <option>Termotanque eléctrico 65 lts.</option>
+              <option>Termotanque eléctrico 40 lts.</option>
             </select>
-            {/* <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
-                <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </span> */}
           </div>
         </div>
         <div class="p-2 md:w-1/2 w-full">
           <div class="relative">
-            <label for="email" class="leading-7 text-sm text-gray-600">Modelo</label>
+            <label for="email" class="leading-7 text-sm text-gray-600">Nº de serie</label>
             <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></input>
+          </div>
+        </div>
+        <div class="p-2 md:w-1/2 w-full">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">Instalador</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></input>
+          </div>
+        </div>
+        <div class="p-2 md:w-1/2 w-full">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">Nº de matrícula del instalador</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></input>
+          </div>
+        </div>
+        <div class="p-2 md:w-1/4 w-full">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">Factura Nº</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></input>
+          </div>
+        </div>
+        <div class="p-2 md:w-1/2 w-full">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">zarsador</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></input>
           </div>
         </div>
         <div class="p-2 w-full">
@@ -125,8 +153,9 @@ const Contacto = () => {
       </div>
     </div>
   </div>
-</section>
-  
+</section>          
+        </div>
+      </Layout> 
 
     </div>
   );
