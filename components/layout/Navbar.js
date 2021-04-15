@@ -55,13 +55,8 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/"
+                        <Link href="/contacto"
                         activeClass="active"
-                        // to="section5"
-                        // spy={true}
-                        // smooth={true}
-                        // offset={-70}
-                        // duration={500}
                         className="px-3 py-2 flex items-center text-lg text-white hover:opacity-75 cursor-pointer"
                         >Contacto
                         </Link>
