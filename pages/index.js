@@ -16,7 +16,7 @@ const Index = () => {
         {/* Sección Patagonia */}
         <section className="bg-gray-200 text-gray-600 body-font">
           <div className="container px-5 md:px-40 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
+          <div className="flex flex-col text-center w-full mb-12" id="patagonia">
             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Línea Patagonia</h1>
             <div className="h-1 mx-auto bg-gradient-to-r from-yellow-500 to-yellow-600 w-24 mt-3 rounded mb-8"></div>
           </div>
@@ -57,7 +57,7 @@ const Index = () => {
 
         {/* Sección Euro */}
         <section className="bg-gray-200 text-gray-600 body-font">
-          <div className="container px-5 md:px-40 py-24 mx-auto">
+          <div className="container px-5 md:px-40 py-24 mx-auto"  id="euro">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Línea Euro</h1>
             <div className="h-1 mx-auto bg-gradient-to-r from-yellow-500 to-yellow-600 w-24 mt-3 rounded mb-8"></div>

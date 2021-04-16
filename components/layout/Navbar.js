@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import { Link as Scroll } from 'react-scroll';
 
 const Navbar = () => {
     
@@ -32,14 +33,26 @@ const Navbar = () => {
                     <ul className="flex flex-col lg:flex-row list-none lg:ml-auto font-semibold">
                     
                     <li className="nav-item pr-10">
-                        <Link href="/">
-                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Línea Patagonia</a>
-                        </Link>
+                    <Scroll
+                        activeClass="active"
+                        to="patagonia"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>
+                        <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Línea Patagonia</a>
+                    </Scroll>
                     </li>
                     <li className="nav-item pr-10">
-                        <Link href="/">
-                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Línea Euro</a>
-                        </Link>
+                    <Scroll
+                        activeClass="active"
+                        to="euro"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>
+                        <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Línea Euro</a>
+                    </Scroll>
                     </li>
                     <li className="nav-item pr-10">
                         <Link href="/">
