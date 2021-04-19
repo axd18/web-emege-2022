@@ -99,9 +99,9 @@ const Index = () => {
 
         {/* Sección Termos */}
         <section className="bg-gray-200 text-gray-600 body-font">
-          <div className="container px-5 md:px-40 py-24 mx-auto">
+          <div className="container px-5 md:px-40 py-24 mx-auto" id="termos">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-600">Línea termotanques</h1>
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-600">Termotanques</h1>
             <div className="h-1 mx-auto bg-gradient-to-r from-yellow-500 to-yellow-600 w-24 mt-3 rounded mb-8"></div>
           </div>
           <div className="md:flex flex-wrap">
