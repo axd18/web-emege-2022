@@ -1,7 +1,8 @@
 // import Head from 'next/head'
 import Layout from '../components/layout/Layout';
 import { patagonia, euro, termos } from '../cards'
-import  Navbar  from '../components/layout/Navbar'
+import  Navbar  from '../components/layout/Navbar';
+import Slide from '../components/Slide';
 
 const Index = () => {
   return (
@@ -9,9 +10,10 @@ const Index = () => {
       <Layout>
         {/* Main */}
         <Navbar />
-        <div className="">
+        {/* <div className="">
               <img src="/img-main-euro.jpg"/>
-        </div>
+        </div> */}
+        <Slide />
 
         {/* Sección Patagonia */}
         <section className="bg-gray-200 text-gray-600 body-font">
