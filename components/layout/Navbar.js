@@ -9,7 +9,7 @@ const Navbar = () => {
     return ( 
         
         <header>
-            <nav className="bg-gray-400 absolute w-full items-center justify-center px-2 md:bg-opacity-0">
+            <nav className="bg-gray-400 absolute w-full items-center justify-center px-2 md:bg-opacity-0 z-10">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <Link href="/">
