@@ -9,14 +9,14 @@ const Navbar = () => {
     return ( 
         
         <header>
-            <nav className="bg-gray-400 absolute w-full items-center justify-center px-2 md:bg-opacity-0 z-10">
-                <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+            <nav className="md:bg-transparent bg-white absolute w-full h-14 items-center justify-center px-2 md:bg-opacity-0 z-10">
+                <div className="container md:bg-transparent bg-white px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <Link href="/">
                             <a className="inline-block mr-4  content-start whitespace-no-wrap object-contain w-20 md:w-36 cursor-pointer"><img src="/logo-emege.png"/></a>
                         </Link>
                         <button
-                        className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent  block lg:hidden outline-none focus:outline-none"
+                        className="text-gray-500 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded   block lg:hidden outline-none focus:outline-none"
                         type="button"
                         onClick={() => setNavbarOpen(!navbarOpen)}
                         >
@@ -30,7 +30,7 @@ const Navbar = () => {
                     }
                     id="example-navbar-danger"
                 >
-                    <ul className="flex flex-col lg:flex-row list-none lg:ml-auto font-semibold">
+                    <ul className=" flex flex-col lg:flex-row list-none lg:ml-auto font-semibold">
                     
                     <li className="nav-item pr-10">
                     <Scroll

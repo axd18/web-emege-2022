@@ -1,28 +1,34 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide, Autoplay} from 'swiper/react';
-import styles from '../Swiper.module.scss'
+import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
+
+// Import Swiper
+import { Swiper, SwiperSlide} from 'swiper/react';
 
 // Import Swiper styles
-// import 'swiper/swiper.scss';
+import 'swiper/swiper-bundle.css';
+// install Swiper modules
+SwiperCore.use([ Navigation, Pagination, Autoplay ]);
+
 
 
 const Slide = () => {
     
     return ( 
-        <div className={styles}>
+        
         <Swiper
-        // spaceBetween={50}
+        navigation
+        pagination
+        autoplay={{delay: 4000, disableOnInteraction: false}}
+        spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         >
-        <SwiperSlide><img src="/img-main-euro.jpg"/></SwiperSlide>
-        <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide><img src="/img-main-euro.jpg"/></SwiperSlide>
+            <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide>
+            <SwiperSlide><img src="/img-main-euro.jpg"/></SwiperSlide>
+            <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide>
         </Swiper>
-        </div>
-     );
+    );
 }
  
 export default Slide;
