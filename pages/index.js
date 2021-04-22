@@ -3,6 +3,7 @@ import Layout from '../components/layout/Layout';
 import { patagonia, euro, termos } from '../cards'
 import  Navbar  from '../components/layout/Navbar';
 import Slide from '../components/Slide';
+import TxtAnimate from '../components/TxtAnimate';
 
 const Index = () => {
   return (
