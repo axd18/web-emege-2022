@@ -3,11 +3,14 @@ import Layout from '../components/layout/Layout';
 import { patagonia, euro, termos } from '../cards'
 import  Navbar  from '../components/layout/Navbar';
 import Slide from '../components/Slide';
-import TxtAnimate from '../components/TxtAnimate';
+
+import Link from 'next/link';
+
+// import TxtAnimate from '../components/TxtAnimate';
 
 const Index = () => {
   return (
-    <div>
+    <div className="text-gray-200">
       <Layout>
         {/* Main */}
         <Navbar />
@@ -15,8 +18,44 @@ const Index = () => {
               <img src="/img-main-euro.jpg"/>
         </div> */}
         <Slide />
+        {/* Secciones */}
+      <section className=" body-font">
+          <div className="container px-5 py-24 mx-auto flex flex-wrap">
+            <div className="lg:w-2/3 mx-auto">
+              <Link href="/patagonia">
+                <a className="flex flex-wrap w-full  bg-gray-100 py-32 px-10 relative mb-4">
+                  <img alt="gallery" className="w-full object-cover h-42 object-center block absolute inset-0" src="img-section-patagonia.jpg"/>
+                  {/* <div className="text-center relative z-10 w-full">
+                    <h2 className="text-2xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+                    <p className="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+                  </div> */}
+                </a>
+              </Link>
+              <div className="flex flex-wrap -mx-2 mt-44">
+                <div className="px-2 w-1/2">
+                  <div className="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                    <img alt="gallery" className="w-full object-cover h-42 object-center block absolute inset-0" src="img-section-euro.jpg"/>
+                    {/* <div className="text-center relative z-10 w-full">
+                      <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+                      <p className="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+                    </div> */}
+                  </div>
+                </div>
+                <div className="px-2 w-1/2">
+                  <div className="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                    <img alt="gallery" className="w-full object-cover h-42 object-center block absolute inset-0" src="img-section-termo.jpg"/>
+                    {/* <div className="text-center relative z-10 w-full">
+                      <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+                      <p className="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        {/* Sección Patagonia */}
+        {/* Sección Patagonia 
         <section className="bg-gray-200 text-gray-600 body-font">
           <div className="container px-5 md:px-40 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12" id="patagonia">
@@ -56,9 +95,9 @@ const Index = () => {
             }
             </div>
           </div>
-        </section>
+        </section>*/}
 
-        {/* Sección Euro */}
+        {/* Sección Euro *
         <section className="bg-gray-200 text-gray-600 body-font">
           <div className="container px-5 md:px-40 py-24 mx-auto"  id="euro">
           <div className="flex flex-col text-center w-full mb-12">
@@ -98,9 +137,9 @@ const Index = () => {
             }
             </div>
           </div>
-        </section>
+        </section>*/}
 
-        {/* Sección Termos */}
+        {/* Sección Termos 
         <section className="bg-gray-200 text-gray-600 body-font">
           <div className="container px-5 md:px-40 py-24 mx-auto" id="termos">
           <div className="flex flex-col text-center w-full mb-12">
@@ -139,7 +178,7 @@ const Index = () => {
           }
           </div>
           </div>
-        </section>
+        </section>*/}
 
       </Layout>
     </div>

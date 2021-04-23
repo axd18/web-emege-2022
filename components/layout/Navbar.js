@@ -33,15 +33,17 @@ const Navbar = () => {
                     <ul className=" flex flex-col lg:flex-row list-none lg:ml-auto font-semibold">
                     
                     <li className="nav-item pr-10">
-                    <Scroll
-                        activeClass="active"
-                        to="patagonia"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}>
+                    <Link
+                        href="/patagonia"
+                        // activeClass="active"
+                        // to="patagonia"
+                        // spy={true}
+                        // smooth={true}
+                        // offset={-70}
+                        // duration={500}
+                        >
                         <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Línea Patagonia</a>
-                    </Scroll>
+                    </Link>
                     </li>
                     <li className="nav-item pr-10">
                     <Scroll

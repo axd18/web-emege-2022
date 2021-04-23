@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Footer from './Footer'
+import Navbar from './Navbar'
 
 const Layout = ({children}) => {
     return ( 
@@ -13,11 +14,15 @@ const Layout = ({children}) => {
                 <link rel="stylesheet" href="../package/swiper-bundle.min.css"></link>
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></link>
             </Head>
-            
+            <header>
+                <Navbar />
+            </header>
             <main>
                 {children}
             </main>
+            
             <footer>
+                <div class="mt-44 w-full border-t border-gray-200 text-center"></div>
                 <Footer />
             </footer>
         </>
