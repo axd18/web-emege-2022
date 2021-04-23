@@ -24,10 +24,8 @@ const Slide = () => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide>
-                <div><TxtAnimate /></div>
-                <img src="/img-main-euro.jpg"/></SwiperSlide>
-            <SwiperSlide><div><TxtAnimate /></div><img src="/img-main-patagonia.jpg"/></SwiperSlide>
+            <SwiperSlide><img src="/img-main-euro.jpg"/></SwiperSlide>
+            <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide>
             <SwiperSlide><img src="/img-main-euro.jpg"/></SwiperSlide>
             <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide>
         </Swiper>

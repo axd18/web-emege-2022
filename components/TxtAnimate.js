@@ -5,8 +5,8 @@ const TxtAnimate = () => {
     
     
     return ( 
-        <div className="container z-20">
-            <span className="text1">Línea Euro</span>
+        <div className="container z-20 animate__animated animate__fadeInUp">
+            <span className="animate__animated animate__fadeInUp">Línea Euro</span>
             <span className="text2">Diseño compacto que armoniza con tu hogar.</span>
             <style jsx>{`
     
@@ -33,8 +33,8 @@ const TxtAnimate = () => {
         margin-bottom: 20px;
         background: white;
         position: relative;
-        animation-delay: 10s;
-        animation: text 0.5s 1;
+        // animation-delay: 10s;
+        // animation: text 0.5s 1;
     }
 
     .text2 {
@@ -42,15 +42,15 @@ const TxtAnimate = () => {
         font-size: 60px;
     }
 
-    @keyframes text {
-        0% {
-            visibility: hidden;
-            margin-bottom: -40px;
-        }
-        100% {
-            visibility: visible;
-        }
-    }
+    // @keyframes text {
+    //     0% {
+    //         visibility: hidden;
+    //         margin-bottom: -40px;
+    //     }
+    //     100% {
+    //         visibility: visible;
+    //     }
+    // }
 
 
       `}</style>
