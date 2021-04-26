@@ -41,13 +41,15 @@ const Index = () => {
                   </Link>
                 </div>
                 <div className="px-2 w-1/2">
-                  <div className="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <Link href="/termos">
+                  <a className="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
                     <img alt="gallery" className="w-full object-cover h-42 object-center block absolute inset-0" src="img-section-termo.jpg"/>
                     {/* <div className="text-center relative z-10 w-full">
                       <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
                       <p className="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
                     </div> */}
-                  </div>
+                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

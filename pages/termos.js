@@ -4,6 +4,14 @@ import { termos } from '../cards'
 const Termos = () => {
     return ( 
         <Layout>
+        <section className=" body-font">
+          <div className="py-24 mx-auto flex flex-wrap">
+            <div className="flex flex-wrap w-full h-96 bg-gray-400 py-32 px-10 relative">
+              {/* <img alt="gallery" className="w-full object-cover h-96 object-center block absolute inset-0" src="img-section-euro.jpg"/> */}
+            </div>
+          </div>
+        </section>
+        
         <section className="bg-gray-200 text-gray-600 body-font">
           <div className="container px-5 md:px-40 py-24 mx-auto" id="termos">
           <div className="flex flex-col text-center w-full mb-12">
