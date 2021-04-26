@@ -4,7 +4,6 @@ import  Navbar  from '../components/layout/Navbar'
 const Contacto = () => {
   return (
     <div>
-      <Navbar />
       <Layout>
         <div>
         <section class="text-gray-600 body-font ">
