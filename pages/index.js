@@ -29,11 +29,11 @@ const Index = () => {
                 </a>
               </Link>
               <div className="flex flex-wrap -mx-2">
-                <div className="px-2 md:w-1/2 w-full">
+                <div className="md:w-1/2 w-full">
                   <Link href="/euro">
                   <a className="flex flex-wrap w-full bg-gray-100 md:py-32 py-20 px-10 relative mb-4 overflow test">
                     <img alt="gallery" className="w-full object-cover h-42 object-center block absolute inset-0 card-img-top" src="img-section-euro.jpg"/>
-                    <div className="details text-white ">
+                    <div className="details text-white">
                       <h2 className="text-3xl font-medium title-font mb-2">Línea Euro</h2>
                       <p className="leading-relaxed">Diseño compacto que armoniza con cada espacio de tu hogar.</p>
                     </div>
