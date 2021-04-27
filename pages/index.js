@@ -24,7 +24,7 @@ const Index = () => {
                   <img alt="gallery" className="w-full object-cover h-full object-center block absolute inset-0 card-img-top" src="img-section-patagonia.jpg"/>
                   <div className="details text-white">
                     <h2 className="text-3xl font-medium title-font mb-2">Línea Patagonia</h2>
-                    <p className="leading-relaxed">Calor frontal que llega más rápido a todo el ambiente.</p>
+                    <p className="leading-relaxed">Calor frontal que llega más rápido a todo el ambiente. + INFO</p>
                   </div>
                 </a>
               </Link>
