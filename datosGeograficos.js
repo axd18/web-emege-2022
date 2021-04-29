@@ -1,5 +1,18 @@
 
     export const provincias = [
+        {
+          "nombre_completo": "Provincia de Buenos Aires",
+          "fuente": "IGN",
+          "iso_id": "AR-B",
+          "nombre": "Buenos Aires",
+          "id": "06",
+          "categoria": "Provincia",
+          "iso_nombre": "Buenos Aires",
+          "centroide": {
+            "lat": -36.6769415180527,
+            "lon": -60.5588319815719
+          }
+        },
       {
         "nombre_completo": "Provincia de Misiones",
         "fuente": "IGN",
@@ -287,23 +300,10 @@
         }
       },
       {
-        "nombre_completo": "Provincia de Buenos Aires",
-        "fuente": "IGN",
-        "iso_id": "AR-B",
-        "nombre": "Buenos Aires",
-        "id": "06",
-        "categoria": "Provincia",
-        "iso_nombre": "Buenos Aires",
-        "centroide": {
-          "lat": -36.6769415180527,
-          "lon": -60.5588319815719
-        }
-      },
-      {
         "nombre_completo": "Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur",
         "fuente": "IGN",
         "iso_id": "AR-V",
-        "nombre": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+        "nombre": "Tierra del Fuego",
         "id": "94",
         "categoria": "Provincia",
         "iso_nombre": "Tierra del Fuego",
