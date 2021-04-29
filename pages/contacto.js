@@ -1,11 +1,11 @@
-import Layout from '../components/layout/Layout';
-import  Navbar  from '../components/layout/Navbar'
 
-const Contacto = () => {
+import Layout from '../components/layout/Layout';
+
+const Asistencia = () => {
   return (
     <div>
       <Layout>
-        <div>
+        <>
         <section class="text-gray-600 body-font ">
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12 mt-24">
@@ -152,12 +152,11 @@ const Contacto = () => {
       </div>
     </div>
   </div>
-</section>          
-        </div>
-      </Layout> 
-
+</section>
+        </>
+      </Layout>
     </div>
   );
 }
 
-export default Contacto;
+export default Asistencia;

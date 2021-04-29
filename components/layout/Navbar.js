@@ -53,9 +53,14 @@ const Navbar = () => {
                         <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Termotanques</a>
                     </Link>
                     </li>
+                    <li className="nav-item pr-10">
+                        <Link href="/asistencia">
+                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Asistencia</a>
+                        </Link>
+                    </li>
                     <li className="nav-item">
                         <Link href="/contacto">
-                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Asistencia</a>
+                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Contacto</a>
                         </Link>
                     </li>
                     </ul>
