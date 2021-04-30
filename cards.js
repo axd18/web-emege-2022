@@ -9,7 +9,8 @@ export const patagonia = [
             alto:'Alto: 61 cm',
             ancho:'Ancho: 31 cm',
             profundidad:'Profundidad: 12 cm'
-        }
+        },
+        manual: 'ManualPatagonia.pdf'
     },
     {
         title:'TB o TBU 3500',
@@ -20,7 +21,8 @@ export const patagonia = [
             alto:'Alto: 61 cm',
             ancho:'Ancho: 50 cm',
             profundidad:'Profundidad: 12 cm'
-        }
+        },
+        manual: 'ManualPatagonia.pdf'
     },
     {
         title:'TB o TBU 5000',
@@ -31,7 +33,8 @@ export const patagonia = [
             alto:'Alto: 72,5 cm',
             ancho:'Ancho: 55 cm',
             profundidad:'Profundidad: 17,5 cm'
-        }
+        },
+        manual: 'ManualPatagonia.pdf'
     }
 ]
 
@@ -45,7 +48,8 @@ export const euro = [
             alto:'Alto: 61 cm',
             ancho:'Ancho: 31 cm',
             profundidad:'Profundidad: 13 cm'
-        }
+        },
+        manual: 'ManualEuro.pdf'
     },
     {
         title:'TB o TBU 3500',
@@ -56,7 +60,8 @@ export const euro = [
             alto:'Alto: 61 cm',
             ancho:'Ancho: 50 cm',
             profundidad:'Profundidad: 13 cm'
-        }
+        },
+        manual: 'ManualEuro.pdf'
     },
     {
         title:'TB o TBU 5400',
@@ -67,7 +72,8 @@ export const euro = [
             alto:'Alto: 61 cm',
             ancho:'Ancho: 65 cm',
             profundidad:'Profundidad: 19 cm'
-        }
+        },
+        manual: 'ManualEuro.pdf'
     },
     {
         title:'Sin Salida 3000',
@@ -78,7 +84,8 @@ export const euro = [
             alto:'Alto: 61 cm',
             ancho:'Ancho: 31 cm',
             profundidad:'Profundidad: 13 cm'
-        }
+        },
+        manual: 'ManualEuro.pdf'
     },
     {
         title:'Sin Salida 5000',
@@ -90,6 +97,7 @@ export const euro = [
             ancho:'Ancho: 50 cm',
             profundidad:'Profundidad: 13 cm'
         },
+        manual: 'ManualEuro.pdf'
     },
     {
         title:'Sin Salida 8000',
@@ -101,6 +109,7 @@ export const euro = [
             ancho:'Ancho: 65 cm',
             profundidad:'Profundidad: 19 cm'
         },
+        manual: 'ManualEuro.pdf'
     }
     
 ]

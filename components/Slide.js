@@ -1,4 +1,3 @@
-import TxtAnimate from './TxtAnimate';
 
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
 
