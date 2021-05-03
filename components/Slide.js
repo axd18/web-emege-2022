@@ -5,7 +5,7 @@ import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide} from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/swiper-bundle.css';
+// import 'swiper/swiper-bundle.css';
 // install Swiper modules
 SwiperCore.use([ Navigation, Pagination, Autoplay ]);
 
@@ -25,8 +25,8 @@ const Slide = () => {
         >
             <SwiperSlide><img src="/img-main-euro.jpg"/></SwiperSlide>
             <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide>
-            <SwiperSlide><img src="/img-main-euro.jpg"/></SwiperSlide>
-            <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide>
+            <SwiperSlide><img src="/1775522228.jpg"/></SwiperSlide>
+            {/* <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide> */}
         </Swiper>
     );
 }
