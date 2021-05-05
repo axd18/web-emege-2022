@@ -4,16 +4,16 @@ import { termos } from '../cards'
 const Termos = () => {
     return ( 
         <Layout>
-        <section className=" body-font">
+        <section className="body-font">
           <div className="py-24 mx-auto flex flex-wrap">
-            <div className="flex flex-wrap w-full h-96 bg-gray-400 py-32 px-10 relative">
-              {/* <img alt="gallery" className="w-full object-cover h-96 object-center block absolute inset-0" src="img-section-euro.jpg"/> */}
+            <div className="flex flex-wrap w-full bg-gray-100 md:py-24 px-10 relative mb-4">
+              <img alt="gallery" className="w-full object-cover md:h-auto object-center block absolute inset-0" src="img-section-main-termos.jpg"/>
             </div>
           </div>
         </section>
         
         <section className="bg-gray-200 text-gray-600 body-font">
-          <div className="container px-5 md:px-40 py-24 mx-auto" id="termos">
+        <div className="container md:mt-60 px-5 md:px-40 md:py-24 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-600">Termotanques</h1>
             <div className="h-1 mx-auto bg-gradient-to-r from-yellow-500 to-yellow-600 w-24 mt-3 rounded mb-8"></div>
