@@ -1,6 +1,17 @@
+import React, { useState } from 'react';
+// import useLocalidades from '../hooks/useLocalidades';
+
 import Layout from '../components/layout/Layout';
+// import axios from 'axios'
 
 const Contacto = () => {
+  
+  // const [ localidades, guardarLocalidades ] = useState([]);
+  // const { Localidades } = useLocalidades(localidades);
+  
+  
+  
+  
   return (
     <div>
       <Layout>
@@ -56,6 +67,7 @@ const Contacto = () => {
       </div>
     </div>
   </div>
+  
 </section>          
         </div>
       </Layout> 
