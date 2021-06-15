@@ -29,7 +29,7 @@ const Layout = ({children, header = true}) => {
             </main>
             
             <footer>
-                <div className="mt-44 w-full border-t border-gray-200 text-center"></div>
+                {/* <div className="mt-44 w-full border-t border-gray-200 text-center"></div> */}
                 <Footer />
             </footer>
         </>
