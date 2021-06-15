@@ -1,6 +1,6 @@
 // import Head from 'next/head'
 import Layout from '../components/layout/Layout';
-import  Navbar  from '../components/layout/Navbar';
+import Navbar  from '../components/layout/Navbar';
 import Slide from '../components/Slide';
 
 import Link from 'next/link';

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Layout from '../components/layout/Layout';
 // import axios from 'axios'
 
-const Contacto = () => {
+const Asistencia = () => {
   
   // const [ localidades, guardarLocalidades ] = useState([]);
   // const { Localidades } = useLocalidades(localidades);
@@ -76,4 +76,4 @@ const Contacto = () => {
   );
 }
 
-export default Contacto;
+export default Asistencia;
