@@ -7,7 +7,7 @@ const Termos = () => {
         <section className="body-font">
           <div className="py-24 mx-auto flex flex-wrap">
             <div className="flex flex-wrap w-full bg-gray-100 md:py-24 px-10 relative mb-4">
-              <img alt="gallery" className="w-full object-cover md:h-auto object-center block absolute inset-0" src="img-section-main-termos.jpg"/>
+              <img alt="gallery" className="w-full object-cover md:h-auto object-center block absolute inset-0" src="img-section-main-termos-2.jpg"/>
             </div>
           </div>
         </section>
