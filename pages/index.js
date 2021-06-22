@@ -46,7 +46,7 @@ const Index = () => {
                     <img alt="gallery" className="w-full object-cover h-42 object-center block absolute inset-0 card-img-top" src="img-section-termo.jpg"/>
                     <div className="details text-white">
                       <h2 className="text-3xl font-medium title-font mb-2">Línea Termotanques</h2>
-                      <p className="leading-relaxed">Diseño compacto que armoniza con cada espacio de tu hogar.</p>
+                      <p className="leading-relaxed">Agua caliente al instante y por más tiempo.</p>
                     </div>
                   </a>
                   </Link>

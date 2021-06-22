@@ -24,7 +24,7 @@ const Euro = () => {
             { 
               euro.map(({title, area, span, medidas, image, manual}, i) => (
 
-                <div className="flex flex-wrap md:w-1/4" key={i}>
+                <div className="flex flex-wrap md:w-1/3" key={i}>
                 <div className="p-4">
                   <div className="h-full rounded-lg overflow-hidden shadow-md">
                     <img className="lg:h-auto md:h-auto w-auto object-cover object-center" src={image} alt="producto"/>

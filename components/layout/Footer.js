@@ -11,7 +11,7 @@ const Footer = () => {
         {/* <span className="ml-3 text-xl">Tailblocks</span> */}
       </a>
       <p className="mt-2 text-sm text-gray-500">Coppens S.A
-Calle 5 entre 2 y 4 Parque Ind. Gral. Savio Ruta 88 Km. 6,5 (7601) Batán, Mar del Plata, Bs. As., Argentina.</p>
+        Calle 5 entre 2 y 4 Parque Ind. Gral. Savio Ruta 88 Km. 6,5 (7601) Batán, Mar del Plata, Bs. As., Argentina.</p>
     </div>
     <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
       
