@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Layout from "./layout/Layout";
 import { useForm } from "react-hook-form";
 import { init, sendForm } from "emailjs-com";
 
@@ -77,7 +76,7 @@ const Form = () => {
               `}</style>
 
               <div className="bg-white lg:w-1/2 md:w-2/3 mx-auto">
-                <div className="flex flex-wrap p-8 shadow-md">
+                <div className="flex flex-wrap md:p-8 p-4 shadow-md">
                   
                   {/*Nombre*/}
                   <div className="p-2 md:w-1/2 w-full">
