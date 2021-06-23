@@ -1,5 +1,6 @@
 
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
+import "swiper/components/pagination/pagination.min.css"
 
 // Import Swiper
 import { Swiper, SwiperSlide} from 'swiper/react';
@@ -17,7 +18,7 @@ const Slide = () => {
         
         <Swiper
         navigation
-        pagination
+        pagination={true}
         autoplay={{delay: 4000, disableOnInteraction: false}}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
