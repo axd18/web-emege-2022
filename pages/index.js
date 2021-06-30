@@ -40,7 +40,7 @@ const Index = () => {
                   </a>
                   </Link>
                 </div>
-                <div className="px-2 md:w-1/2 w-full">
+                <div className="md:w-1/2 w-full">
                   <Link href="/termos">
                   <a className="flex flex-wrap w-full bg-gray-100 md:py-32 py-20 relative mb-4 overflow test">
                     <img alt="gallery" className="w-full object-cover h-42 object-center block absolute inset-0 card-img-top" src="img-section-termo.jpg"/>
