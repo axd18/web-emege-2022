@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import Scroll from '../Scroll';
 
 
 
@@ -19,7 +20,7 @@ const Layout = ({children, header = true}) => {
             </Head>
             {
                 header && (
-                    <header>
+            <header>
                 <Navbar />
             </header>
                 )
@@ -32,6 +33,7 @@ const Layout = ({children, header = true}) => {
                 {/* <div className="mt-44 w-full border-t border-gray-200 text-center"></div> */}
                 <Footer />
             </footer>
+            <Scroll />
         </>
      );
 }
