@@ -1,0 +1,24 @@
+.overflow {
+    overflow: hidden;
+  }
+
+  .overflow .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+  }
+  .overflow .card-img-top:hover {
+    transform: scale(1.2);
+  }
+
+  .details {
+    position: absolute;
+    width: 100%;
+    bottom: -36px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(19, 19, 19, 0.938));
+    padding: 10px;
+    transition: .5s;
+  }
+ 
+  .test:hover .details {
+    bottom: 0;
+  }
