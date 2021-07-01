@@ -178,6 +178,9 @@ const Form = () => {
                     </div>
                   </div>
 
+                  <label className="leading-7 text-sm text-gray-600">
+                        Mensaje
+                      </label>    
                   <a className="p-2 w-full">
                     <input
                       className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
@@ -185,7 +188,6 @@ const Form = () => {
                       value="Enviar"
                     />
                   </a>
-
                   <p className="status-message flex mx-auto text-center">
                     {statusMessage}
                   </p>

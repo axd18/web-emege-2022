@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { init, sendForm } from "emailjs-com";
 
 // LLama a la función init con el id de Emailjs como parámetro.
-init("user_GnpFV1jrQVC88MXQCxSGg");
+init("user_1xeHhIAqEdSO67KBXZPSZ");
 
 const FormService = () => {
   const {
@@ -11,13 +11,14 @@ const FormService = () => {
     formState: { errors },
     handleSubmit,
   } = useForm();
+  
   const [statusMessage, setStatusMessage] = useState("Mensaje");
 
   // Función que toma como parámetros el id del servicio, id del template y el id del form. Y envía los datos del form al email.
   const onSubmit = (data) => {
     const statusMessage = document.querySelector(".status-message");
     const form = document.querySelector("#contact-form");
-    sendForm("service_jcjqzlh", "template_n2r3s8a", "#contact-form").then(
+    sendForm("service_8jhyua7", "template_7ifru1a", "#contact-form").then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         form.reset();
@@ -45,11 +46,11 @@ const FormService = () => {
       <>
         <section className="text-gray-600 body-font ">
           <form
-            className="container px-5 py-24 mx-auto"
+            className="md:container px-2 py-24 mx-auto"
             id="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex flex-col text-center w-full mb-12 mt-24">
+            <div className="flex flex-col text-center w-full mb-8 mt-24">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-600">Solicitud de Servicio técnico</h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Si necesitás un servicio post venta en cualquier lugar del país,
                 por favor completá el htmlFormulario o comunicate con nosotros a través de nuestras vías de contacto: Teléfono:00000 / Email: info@emege.ar
@@ -69,7 +70,7 @@ const FormService = () => {
               }
             `}</style>
 
-            <div className="container px-5 py-24 mx-auto">
+            <div className=" md:px-5 px-0 py-24 mx-auto">
               
               <div className="bg-white lg:w-1/2 md:w-2/3 mx-auto p-8 shadow-md">
                 <div className="flex flex-wrap -m-2">
@@ -112,7 +113,7 @@ const FormService = () => {
                         className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         {...register("user_direccion", { required: true })}
                       ></input>
-                      {errors.user_name?.type === "required" && (
+                      {errors.user_direccion?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
                           La dirección es requerida.
                         </p>
@@ -123,10 +124,10 @@ const FormService = () => {
                   <div className="p-2 md:w-1/2 w-full">
                     <div className="relative">
                       <label
-                        htmlFor="email"
+                        htmlFor="piso"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Piso / Depto / Otros datos
+                        Piso / Depto / Otros datos*
                       </label>
                       <input
                         type="text"
@@ -135,9 +136,54 @@ const FormService = () => {
                         className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       {...register("user_piso", { required: true })}
                       ></input>
-                      {errors.user_name?.type === "required" && (
+                      {errors.user_piso?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
                           El piso y el depto son requeridos.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  
+                  <div className="p-2 md:w-1/3 w-full">
+                    <div className="relative">
+                      <label
+                        htmlFor="ciudad"
+                        className="leading-7 text-sm text-gray-600"
+                      >
+                        Ciudad*
+                      </label>
+                      <input
+                        type="text"
+                        id="ciudad"
+                        name="user_ciudad"
+                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_ciudad", { required: true })}
+                      ></input>
+                      {errors.user_ciudad?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          La ciudad es requerida.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  <div className="p-2 md:w-1/3 w-full">
+                    <div className="relative">
+                      <label
+                        htmlFor="codpostal"
+                        className="leading-7 text-sm text-gray-600"
+                      >
+                        Código postal*
+                      </label>
+                      <input
+                        type="text"
+                        id="codpostal"
+                        name="user_codpostal"
+                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_codpostal", { required: true })}
+                      ></input>
+                      {errors.user_codpostal?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          El código postal es requerido.
                         </p>
                       )}
                     </div>
@@ -149,94 +195,85 @@ const FormService = () => {
                         htmlFor="email"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Ciudad
+                        Provincia*
                       </label>
                       <input
                         type="text"
-                        id="text"
-                        name="email"
+                        id="provincia"
+                        name="user_provincia"
                         className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_provincia", { required: true })}
                       ></input>
+                      {errors.user_provincia?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          La provincia es requerida.
+                        </p>
+                      )}
                     </div>
                   </div>
-                  <div className="p-2 md:w-1/3 w-1/3">
+                  
+                  <div className="p-2 md:w-1/2 w-full">
+                    <div className="relative">
+                      <label
+                        htmlFor="telefono"
+                        className="leading-7 text-sm text-gray-600"
+                      >
+                        Teléfono*
+                      </label>
+                      <input
+                        type="text"
+                        id="telefono"
+                        name="user_telefono"
+                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_telefono", { required: true })}
+                      ></input>
+                      {errors.user_telefono?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          El teléfono es requerido.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  
+                  <div className="p-2 md:w-1/2 w-full">
                     <div className="relative">
                       <label
                         htmlFor="email"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Código postal
+                        Email*
                       </label>
                       <input
                         type="email"
                         id="email"
-                        name="email"
+                        name="user_email"
                         className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_email", { required: true })}
                       ></input>
+                      {errors.user_email?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          El email es requerido.
+                        </p>
+                      )}
                     </div>
                   </div>
-                  <div className="p-2 md:w-1/3 w-2/3">
-                    <div className="relative">
-                      <label
-                        htmlFor="email"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Provincia
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      ></input>
-                    </div>
-                  </div>
+                  
                   <div className="p-2 md:w-1/2 w-full">
                     <div className="relative">
                       <label
-                        htmlFor="name"
+                        htmlFor="producto"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Teléfono
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      ></input>
-                    </div>
-                  </div>
-                  <div className="p-2 md:w-1/2 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="name"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      ></input>
-                    </div>
-                  </div>
-                  <div className="p-2 md:w-1/2 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="email"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Producto
+                        Producto*
                       </label>
                       <select
-                        type="email"
-                        id="email"
-                        name="email"
+                        type="text"
+                        id="producto"
+                        name="user_producto"
                         className="w-full h-11 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_producto", { required: true })}
                       >
+                        <option>-- Selecciona el producto --</option>
                         <option>Patagonia TB 1900 kcal.</option>
                         <option>Patagonia TB o TBU 3500 kcal.</option>
                         <option>Patagonia TB o TBU 5000 kcal.</option>
@@ -251,125 +288,125 @@ const FormService = () => {
                         <option>Termotanque eléctrico 95 lts.</option>
                         <option>Termotanque eléctrico 65 lts.</option>
                         <option>Termotanque eléctrico 40 lts.</option>
-                      </select>
+                      </select>   
+                      {errors.user_producto?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          El producto es requerido.
+                        </p>
+                      )}                   
                     </div>
                   </div>
+                  
                   <div className="p-2 md:w-1/2 w-full">
                     <div className="relative">
                       <label
-                        htmlFor="email"
+                        htmlFor="serie"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Nº de serie
+                        Nº de serie*
                       </label>
                       <input
-                        type="email"
-                        id="email"
-                        name="email"
+                        type="text"
+                        id="serie"
+                        name="user_serie"
                         className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      {...register("user_serie", { required: true })}
                       ></input>
+                      {errors.user_serie?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          Requerido.
+                        </p>
+                      )}
                     </div>
                   </div>
-                  <div className="p-2 md:w-1/2 w-full">
+                  
+                  <div className="p-2 w-full">
+                    <div className="relative">
+                      <label
+                        htmlFor="nameinstalador"
+                        className="leading-7 text-sm text-gray-600"
+                      >
+                        Nombre y apellido del instalador*
+                      </label>
+                      <input
+                        type="text"
+                        id="nameinstalador"
+                        name="user_nameinstalador"
+                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_nameinstalador", { required: true })}
+                      ></input>
+                      {errors.user_nameinstalador?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          El nombre y apellido del instalador es requerido.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  <div className="p-2 md:w-1/3 w-full">
                     <div className="relative">
                       <label
                         htmlFor="name"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Nombre y apellido del instalador
+                        Nº de matrícula del instalador*
                       </label>
                       <input
                         type="text"
-                        id="name"
-                        name="name"
+                        id="matricula"
+                        name="user_matricula"
                         className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_matricula", { required: true })}
                       ></input>
+                      {errors.user_matricula?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          El Nº de matrícula del instalador es requerido.
+                        </p>
+                      )}
                     </div>
                   </div>
-                  <div className="p-2 md:w-1/2 w-full">
+                  <div className="p-2 md:w-1/3 w-full">
                     <div className="relative">
                       <label
-                        htmlFor="name"
+                        htmlFor="matricula"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Nº de matrícula del instalador
+                        Factura Nº*
                       </label>
                       <input
                         type="text"
-                        id="name"
-                        name="name"
+                        id="factura"
+                        name="user_factura"
                         className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        {...register("user_factura", { required: true })}
                       ></input>
+                      {errors.user_factura?.type === "required" && (
+                        <p className="text-xs text-red-500" role="alert">
+                          Requerido.
+                        </p>
+                      )}
                     </div>
                   </div>
-                  <div className="p-2 md:w-1/4 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="name"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Factura Nº
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      ></input>
-                    </div>
-                  </div>
-                  <div className="p-2 md:w-1/4 w-full">
+                 
+                  <div className="p-2 md:w-1/3 w-full">
                     <div className="relative">
                       <label
                         htmlFor="email"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Fecha de compra
+                        Fecha de compra*
                       </label>
-                      <select
-                        type="email"
-                        id="email"
-                        name="email"
+                      <input
+                        type="date"
+                        id="compra"
+                        name="user_compra"
                         className="w-full h-11 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      >
-                        <option>Día</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="p-2 md:w-1/4 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="email"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        <br></br>
-                      </label>
-                      <select
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="w-full h-11 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      >
-                        <option>Mes</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="p-2 md:w-1/4 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="email"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        <br></br>
-                      </label>
-                      <select
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="w-full h-11 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      >
-                        <option>Año</option>
-                      </select>
+                        {...register("user_compra", { required: true })}
+                      ></input>
+                      {errors.user_compra?.type === "required" && (
+                        <p className="text-xs text-red-500">
+                          Requerido.
+                        </p>
+                      )}
                     </div>
                   </div>
                   <div className="p-2 w-full">
@@ -387,11 +424,15 @@ const FormService = () => {
                       ></textarea>
                     </div>
                   </div>
+                  <div><p className="leading-7 text-sm text-gray-600">* Campos obligatorios.</p></div> 
                   <div className="p-2 w-full">
                     <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                       Enviar
                     </button>
                   </div>
+                  <p className="status-message flex mx-auto text-center">
+                    {statusMessage}
+                  </p>
                 </div>
               </div>
             </div>
