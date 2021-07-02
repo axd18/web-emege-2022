@@ -19,7 +19,7 @@ const Layout = ({children, header = true}) => {
                 <script
                     dangerouslySetInnerHTML={{
                     __html: `
-                        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136951460-1"></script>
+                        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DGYXH2YFD"></script>
                         <script>
                             window.dataLayer = window.dataLayer || [];
                             function gtag(){dataLayer.push(arguments);}
