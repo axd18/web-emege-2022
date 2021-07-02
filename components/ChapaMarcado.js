@@ -7,8 +7,8 @@ const chapaMarcado = () => {
         
         <div className="flex flex-col text-center w-full mb-12 mt-24">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-600">
-                Antes de contactar al servicio técnico<br></br>
-                deberás fijarte qué etiqueta tiene pegada tu equipo.
+                Antes de contactar al Servicio Post Venta,<br></br>
+                por favor mirá qué etiqueta tiene pegada tu equipo.
                 </h1>
                 {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                   y nos ponemos en contacto a la brevedad.

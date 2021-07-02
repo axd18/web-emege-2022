@@ -57,9 +57,9 @@ const FormService = () => {
             id="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex flex-col text-center w-full  mt-24">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-600">Solicitud de Servicio técnico</h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Si necesitás un servicio post venta en cualquier lugar del país,
+            <div className="flex flex-col text-center w-full mt-24">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-600">Solicitud de Servicio Post Venta</h1>
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Si necesitás un servicio Post Venta en cualquier lugar del país,
                 por favor completá el formulario y en breve te contactamos.</p>
             </div>
 
@@ -98,7 +98,7 @@ const FormService = () => {
                       ></input>
                        {errors.user_name?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          El nombre y apellido es requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -121,7 +121,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_direccion?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          La dirección es requerida.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -144,7 +144,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_piso?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          El piso y el depto son requeridos.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -167,7 +167,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_ciudad?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          La ciudad es requerida.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -189,7 +189,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_codpostal?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          El código postal es requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -212,7 +212,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_provincia?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          La provincia es requerida.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -235,7 +235,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_telefono?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          El teléfono es requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -258,7 +258,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_email?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          El email es requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -297,7 +297,7 @@ const FormService = () => {
                       </select>   
                       {errors.user_producto?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          El producto es requerido.
+                          Campo obligatorio.
                         </p>
                       )}                   
                     </div>
@@ -320,7 +320,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_serie?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          Requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -343,7 +343,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_nameinstalador?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          El nombre y apellido del instalador es requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -365,7 +365,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_matricula?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          El Nº de matrícula del instalador es requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -387,7 +387,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_factura?.type === "required" && (
                         <p className="text-xs text-red-500" role="alert">
-                          Requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>
@@ -399,7 +399,7 @@ const FormService = () => {
                         htmlFor="email"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Fecha de compra*
+                        Fecha aproximada de compra*
                       </label>
                       <input
                         type="date"
@@ -410,7 +410,7 @@ const FormService = () => {
                       ></input>
                       {errors.user_compra?.type === "required" && (
                         <p className="text-xs text-red-500">
-                          Requerido.
+                          Campo obligatorio.
                         </p>
                       )}
                     </div>

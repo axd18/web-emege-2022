@@ -11,7 +11,7 @@ const Contacto = () => {
         <>
             <Layout>
                 <Navbar />
-                <ChapaMarcado />
+                {/* <ChapaMarcado /> */}
                 <FormService />
             </Layout>
         </>

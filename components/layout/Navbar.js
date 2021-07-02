@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const Navbar = () => {
     
@@ -61,7 +61,7 @@ const Navbar = () => {
                     </li> */}
                     <li className="nav-item">
                         <Link href="/contacto">
-                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Contacto</a>
+                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Servicio Post Venta</a>
                         </Link>
                     </li>
                     </ul>
