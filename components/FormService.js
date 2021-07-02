@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { init, sendForm } from "emailjs-com";
+import Swal from 'sweetalert2';
 
 // LLama a la función init con el id de Emailjs como parámetro.
 init("user_1xeHhIAqEdSO67KBXZPSZ");
@@ -22,11 +23,17 @@ const FormService = () => {
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         form.reset();
-        setStatusMessage("Tu mensaje ha sido enviado. ¡Muchas Gracias!");
-        statusMessage.className = "status-message success";
-        setTimeout(() => {
-          statusMessage.className = "status-message";
-        }, 1000);
+        // Alert
+        Swal.fire(
+          'Tu mensaje ha sido enviado',
+          '¡Muchas Gracias!',
+          'success'
+        );
+        // setStatusMessage("Tu mensaje ha sido enviado. ¡Muchas Gracias!");
+        // statusMessage.className = "status-message success";
+        // setTimeout(() => {
+        //   statusMessage.className = "status-message";
+        // }, 1000);
       },
       function (error) {
         console.log("FAILED...", error);
@@ -50,11 +57,10 @@ const FormService = () => {
             id="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex flex-col text-center w-full mb-8 mt-24">
+            <div className="flex flex-col text-center w-full  mt-24">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-600">Solicitud de Servicio técnico</h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Si necesitás un servicio post venta en cualquier lugar del país,
-                por favor completá el htmlFormulario o comunicate con nosotros a través de nuestras vías de contacto: Teléfono:00000 / Email: info@emege.ar
-                y en breve te contactaremos.</p>
+                por favor completá el formulario y en breve te contactamos.</p>
             </div>
 
             <style jsx>{`
@@ -70,7 +76,7 @@ const FormService = () => {
               }
             `}</style>
 
-            <div className=" md:px-5 px-0 py-24 mx-auto">
+            <div className=" md:px-5 px-0 py-16 mx-auto">
               
               <div className="bg-white lg:w-1/2 md:w-2/3 mx-auto p-8 shadow-md">
                 <div className="flex flex-wrap -m-2">
@@ -415,7 +421,7 @@ const FormService = () => {
                         htmlFor="message"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Comentarios
+                        Comentario
                       </label>
                       <textarea
                         id="message"
