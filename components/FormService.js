@@ -198,7 +198,7 @@ const FormService = () => {
                   <div className="p-2 md:w-1/3 w-full">
                     <div className="relative">
                       <label
-                        htmlFor="email"
+                        htmlFor="provincia"
                         className="leading-7 text-sm text-gray-600"
                       >
                         Provincia*
