@@ -16,18 +16,7 @@ const Layout = ({children, header = true}) => {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
                 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-                <script
-                    dangerouslySetInnerHTML={{
-                    __html: `
-                        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DGYXH2YFD"></script>
-                        <script>
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
-                            gtag('config', 'G-6DGYXH2YFD');
-                        </script>`
-                    }}
-                />
+                
             </Head>
             {
                 header && (
