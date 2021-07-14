@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 // import Image from 'next/image'
 
 const Navbar = () => {
     
-    const [navbarOpen, setNavbarOpen] = React.useState(false);
+    const [navbarOpen, setNavbarOpen] = useState(false);
     
     return ( 
         
@@ -61,7 +61,17 @@ const Navbar = () => {
                     </li> */}
                     <li className="nav-item">
                         <Link href="/contacto">
-                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer">Servicio Post Venta</a>
+                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer pr-8">Servicio Post Venta</a>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link href="https://www.instagram.com/emegearg/">
+                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer" target="blank"><i class="fab fa-instagram fa-2x"></i></a>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link href="https://www.facebook.com/coppens.ar">
+                            <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer" target="blank"><i class="fab fa-facebook-square fa-2x"></i></a>
                         </Link>
                     </li>
                     </ul>
