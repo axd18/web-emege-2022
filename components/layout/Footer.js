@@ -22,7 +22,7 @@ const Footer = () => {
               </h2>
               <div className="container mx-auto py-4 flex flex-wrap flex-col sm:flex-row">
                 <span className="inline-flex md:mt-0 sm:mt-0 justify-center sm:justify-start">
-                  <Link href="https://www.facebook.com/coppens.ar">
+                  <Link href="https://www.facebook.com/Emeg%C3%A9-Calefacci%C3%B3n-296892737661764/?ref=page_internal">
                     <a target="blank" className="text-gray-500">
                       <svg
                         fill="currentColor"

@@ -70,7 +70,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="https://www.facebook.com/coppens.ar">
+                        <Link href="https://www.facebook.com/Emeg%C3%A9-Calefacci%C3%B3n-296892737661764/?ref=page_internal">
                             <a className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer" target="blank"><i class="fab fa-facebook-square fa-2x"></i></a>
                         </Link>
                     </li>
