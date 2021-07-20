@@ -1,12 +1,14 @@
 import 'swiper/swiper.scss';
 import '../global.css';
-import '../assets/css/secciones.css'
+import '../assets/css/secciones.css';
+import firebase, { FirebaseContext } from '../firebase';
 
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 
 const App = ({ Component, pageProps }) => {
+  
   const router = useRouter()
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -18,7 +20,14 @@ const App = ({ Component, pageProps }) => {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <FirebaseContext.Provider
+      value={{
+        firebase
+      }}>
+      <Component {...pageProps} />
+    </FirebaseContext.Provider>
+  )
 }
 
 export default App
