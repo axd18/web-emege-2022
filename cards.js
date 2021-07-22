@@ -10,7 +10,7 @@ export const patagonia = [
             ancho:'Ancho: 31 cm',
             profundidad:'Profundidad: 12 cm'
         },
-        manual: 'ManualPatagonia.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
     },
     {
         title:'TB o TBU 3000',
@@ -22,7 +22,7 @@ export const patagonia = [
             ancho:'Ancho: 50 cm',
             profundidad:'Profundidad: 12 cm'
         },
-        manual: 'ManualPatagonia.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
     },
     {
         title:'TB o TBU 5000',
@@ -34,7 +34,7 @@ export const patagonia = [
             ancho:'Ancho: 55 cm',
             profundidad:'Profundidad: 17,5 cm'
         },
-        manual: 'ManualPatagonia.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
     }
 ]
 
@@ -49,7 +49,7 @@ export const euro = [
             ancho:'Ancho: 31 cm',
             profundidad:'Profundidad: 13 cm'
         },
-        manual: 'ManualEuro.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-euro-web.pdf?alt=media&token=99dfcd9f-8758-4c22-9c57-c08538d0d535'
     },
     {
         title:'TB o TBU 3500',
@@ -61,7 +61,7 @@ export const euro = [
             ancho:'Ancho: 50 cm',
             profundidad:'Profundidad: 13 cm'
         },
-        manual: 'ManualEuro.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-euro-web.pdf?alt=media&token=99dfcd9f-8758-4c22-9c57-c08538d0d535'
     },
     {
         title:'TB o TBU 5400',
@@ -73,7 +73,7 @@ export const euro = [
             ancho:'Ancho: 65 cm',
             profundidad:'Profundidad: 19 cm'
         },
-        manual: 'ManualEuro.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-euro-web.pdf?alt=media&token=99dfcd9f-8758-4c22-9c57-c08538d0d535'
     },
     {
         title:'Sin Salida 3000',
@@ -85,7 +85,7 @@ export const euro = [
             ancho:'Ancho: 31 cm',
             profundidad:'Profundidad: 13 cm'
         },
-        manual: 'ManualEuro.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-euro-web.pdf?alt=media&token=99dfcd9f-8758-4c22-9c57-c08538d0d535'
     },
     {
         title:'Sin Salida 5000',
@@ -97,7 +97,7 @@ export const euro = [
             ancho:'Ancho: 50 cm',
             profundidad:'Profundidad: 13 cm'
         },
-        manual: 'ManualEuro.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-euro-web.pdf?alt=media&token=99dfcd9f-8758-4c22-9c57-c08538d0d535'
     },
     {
         title:'Sin Salida 8000',
@@ -109,7 +109,7 @@ export const euro = [
             ancho:'Ancho: 65 cm',
             profundidad:'Profundidad: 19 cm'
         },
-        manual: 'ManualEuro.pdf'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-euro-web.pdf?alt=media&token=99dfcd9f-8758-4c22-9c57-c08538d0d535'
     }
     
 ]
