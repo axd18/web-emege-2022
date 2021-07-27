@@ -123,6 +123,7 @@ export const termos = [
         alto:'alto: 144 cm',
         ancho:'ancho: 43.2 cm',
         image: 'rs-120.jpg',
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-ttq-emege-50-80-120-web.pdf?alt=media&token=1848e0a9-99fc-4bcd-89a8-3a583c9ae55c'
     },
     {
         title: 'Recuperación simultánea 80 lts.',
@@ -133,6 +134,7 @@ export const termos = [
         alto:'alto: 108.3 cm',
         ancho:'ancho: 43.2 cm',
         image: 'rs-80.jpg',
+        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-ttq-emege-50-80-120-web.pdf?alt=media&token=1848e0a9-99fc-4bcd-89a8-3a583c9ae55c'
     },
     {
         title: 'Recuperación simultánea 50 lts.',
@@ -142,7 +144,8 @@ export const termos = [
         conexion: 'Conexión de agua: superior',
         alto:'alto: 81.5 cm',
         ancho:'ancho: 43.2 cm',
-        image: 'rs-50.jpg'
+        image: 'rs-50.jpg',
+        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-ttq-emege-50-80-120-web.pdf?alt=media&token=1848e0a9-99fc-4bcd-89a8-3a583c9ae55c'
     },
     {
         title: 'Eléctrico 95 lts.',
@@ -151,7 +154,8 @@ export const termos = [
         conexion: 'Conexión de agua: inferior',
         alto:'alto: 81.5 cm',
         ancho:'ancho: 43.2 cm',
-        image: 'electrico-95.jpg'
+        image: 'electrico-95.jpg',
+        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-ttq-emege-50-80-120-web.pdf?alt=media&token=1848e0a9-99fc-4bcd-89a8-3a583c9ae55c'
     },
     {
         title: 'Eléctrico 65 lts.',
@@ -160,7 +164,8 @@ export const termos = [
         conexion: 'Conexión de agua: inferior',
         alto:'alto: 68 cm',
         ancho:'ancho: 43.3 cm',
-        image: 'electrico-65.jpg'
+        image: 'electrico-65.jpg',
+        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-ttq-emege-50-80-120-web.pdf?alt=media&token=1848e0a9-99fc-4bcd-89a8-3a583c9ae55c'
     },
     {
         title: 'Eléctrico 40 lts.',
@@ -169,6 +174,7 @@ export const termos = [
         conexion: 'Conexión de agua: inferior',
         alto:'alto: 47 cm',
         ancho:'ancho: 43.3 cm',
-        image: 'electrico-40.jpg'
+        image: 'electrico-40.jpg',
+        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-ttq-emege-50-80-120-web.pdf?alt=media&token=1848e0a9-99fc-4bcd-89a8-3a583c9ae55c'
     },
 ]

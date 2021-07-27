@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Layout from "../components/layout/Layout";
 import { termos } from '../cards'
 
@@ -20,7 +21,7 @@ const Termos = () => {
           </div>
           <div className="md:flex flex-wrap">
           {
-            termos.map(({title, aislacion, potencia, tiraje, conexion, ancho, alto, image }, i) => (
+            termos.map(({title, aislacion, potencia, tiraje, conexion, ancho, alto, image, manual }, i) => (
 
               <div className="flex flex-wrap md:w-1/3" key={i}>
                 <div className="p-4">
@@ -37,11 +38,16 @@ const Termos = () => {
                         <li>{ancho}</li>
                       </ul>
                       <div className="flex items-center flex-wrap ">
-                      <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
-                      <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                      <span>Descargar manual</span>
-                      </button>
+                      <Link href={manual}>
+                        <a target="_blank">
+                          <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                            <span>Descargar manual</span>
+                          </button>
+                        </a>
+                      </Link>
                       </div>
+                    
                     </div>
                   </div>
                 </div>
