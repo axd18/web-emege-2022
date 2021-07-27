@@ -12,7 +12,7 @@ const Index = () => {
 
         <Slide />
 
-        <section className=" body-font">
+        <section className=" body-font bg-gray-100">
           <div className="container px-5 md:py-24 py-12 mx-auto flex flex-wrap">
             <div className="md:w-2/3 w-full mx-auto">
               <Link href="/patagonia">

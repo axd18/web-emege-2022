@@ -46,7 +46,7 @@ const FormService = () => {
   return (
     <div>
       <>
-        <section className="text-gray-600 body-font ">
+        <section className="text-gray-600 body-font bg-gray-100">
           <form
             className="md:container px-2 py-24 mx-auto"
             id="contact-form"
