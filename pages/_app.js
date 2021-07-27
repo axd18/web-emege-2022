@@ -1,5 +1,4 @@
 import 'swiper/swiper.scss';
-import '../global.css';
 import '../assets/css/secciones.css';
 import firebase, { FirebaseContext } from '../firebase';
 

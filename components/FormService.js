@@ -29,11 +29,6 @@ const FormService = () => {
           '¡Muchas Gracias!',
           'success'
         );
-        // setStatusMessage("Tu mensaje ha sido enviado. ¡Muchas Gracias!");
-        // statusMessage.className = "status-message success";
-        // setTimeout(() => {
-        //   statusMessage.className = "status-message";
-        // }, 1000);
       },
       function (error) {
         console.log("FAILED...", error);

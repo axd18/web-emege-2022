@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "axios": "0.21.1",
     "emailjs-com": "^2.6.4",
     "firebase": "^8.7.1",
     "firebase-admin": "^9.11.0",
