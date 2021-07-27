@@ -8,7 +8,6 @@ const Footer = () => {
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
               <img className="w-20 h-auto" src="/logo-emege.png" />
-              {/* <span className="ml-3 text-xl">Tailblocks</span> */}
             </a>
             <p className="mt-2 text-sm text-gray-500">
               Coppens S.A Calle 5 entre 2 y 4 Parque Ind. Gral. Savio Ruta 88

@@ -1,8 +1,6 @@
 
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
 import "swiper/components/pagination/pagination.min.css"
-
-// Import Swiper
 import { Swiper, SwiperSlide} from 'swiper/react';
 
 // Import Swiper styles
@@ -17,18 +15,17 @@ const Slide = () => {
     return ( 
         
         <Swiper
-        navigation
-        pagination={true}
-        autoplay={{delay: 4000, disableOnInteraction: false}}
-        slidesPerView={1}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+            navigation
+            pagination={true}
+            autoplay={{delay: 4000, disableOnInteraction: false}}
+            slidesPerView={1}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
         >
             <SwiperSlide><img src="/img-main-patagonia.jpg" className="h-screen w-screen object-cover"/></SwiperSlide>
             <SwiperSlide><img src="/img-main-euro.jpg" className="h-screen w-screen object-cover"/></SwiperSlide>
             <SwiperSlide><img src="/img-section-main-termos.jpg" className="h-screen w-screen object-cover"/></SwiperSlide>
             <SwiperSlide><img src="/img-section-main-termos-eco.jpg" className="h-screen w-screen object-cover"/></SwiperSlide>
-            {/* <SwiperSlide><img src="/img-main-patagonia.jpg"/></SwiperSlide> */}
         </Swiper>
     );
 }
