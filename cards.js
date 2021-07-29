@@ -179,3 +179,18 @@ export const termos = [
         manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-electrico-emege-40-65-90-web.pdf?alt=media&token=45c36864-cd5a-4d8f-a3a3-3773c54a9023'
     },
 ]
+
+export const faq = [
+    {
+        title: '¿Qué es la ventilación U en los calefactores de tiro balanceado?',
+        texto:'La ventilación en U o ventilación vertical, es una opción de instalación para los calefactores de tiro balanceado en potencias de 3000 y 5000 kcal/h, en donde el ambiente no cuenta con una pared al exterior y permite instalar el calefactor en un pared interior. En esta opción de instalación, se utiliza el accesorio TBU que transformará la salida de ventilación del calefactor horizontal de dos conductos concéntricos a vertical en 2 conductos de 3” de diámetro, uno al lado del otro, que se deben prolongar verticalmente hasta rematar a los 4 vientos con un máximo de 6 mts. de longitud y con los sombreretes provistos para cada conducto. La salida de gases debe quedar 15 cm. más alto que la entrada de aire.'
+    },
+    {
+        title: '¿Qué es la ventilación U en los calefactores de tiro balanceado?',
+        texto:'La ventilación en U o ventilación vertical, es una opción de instalación para los calefactores de tiro balanceado en potencias de 3000 y 5000 kcal/h, en donde el ambiente no cuenta con una pared al exterior y permite instalar el calefactor en un pared interior. En esta opción de instalación, se utiliza el accesorio TBU que transformará la salida de ventilación del calefactor horizontal de dos conductos concéntricos a vertical en 2 conductos de 3” de diámetro, uno al lado del otro, que se deben prolongar verticalmente hasta rematar a los 4 vientos con un máximo de 6 mts. de longitud y con los sombreretes provistos para cada conducto. La salida de gases debe quedar 15 cm. más alto que la entrada de aire.'
+    },
+    {
+        title: '¿Qué es la ventilación U en los calefactores de tiro balanceado?',
+        texto:'La ventilación en U o ventilación vertical, es una opción de instalación para los calefactores de tiro balanceado en potencias de 3000 y 5000 kcal/h, en donde el ambiente no cuenta con una pared al exterior y permite instalar el calefactor en un pared interior. En esta opción de instalación, se utiliza el accesorio TBU que transformará la salida de ventilación del calefactor horizontal de dos conductos concéntricos a vertical en 2 conductos de 3” de diámetro, uno al lado del otro, que se deben prolongar verticalmente hasta rematar a los 4 vientos con un máximo de 6 mts. de longitud y con los sombreretes provistos para cada conducto. La salida de gases debe quedar 15 cm. más alto que la entrada de aire.'
+    }
+]
