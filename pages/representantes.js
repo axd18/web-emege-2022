@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
-import ResultadoBusqueda from '../components/ResultadoBusqueda';
+import React, { useState } from "react";
+import ResultadoBusqueda from "../components/ResultadoBusqueda";
 // import useLocalidades from '../hooks/useLocalidades';
 
-import Layout from '../components/layout/Layout';
+import Layout from "../components/layout/Layout";
 // import axios from 'axios'
 
 const Asistencia = () => {
-  
   // const [ localidades, guardarLocalidades ] = useState([]);
   // const { Localidades } = useLocalidades(localidades);
-  
-  
-  
-  
+
   return (
     <Layout>
       <div>
@@ -98,6 +94,6 @@ const Asistencia = () => {
       </div>
     </Layout>
   );
-}
+};
 
 export default Asistencia;

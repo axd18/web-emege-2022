@@ -21,11 +21,8 @@ const PuntosDeVenta = () => {
           </div>
           <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full p-8 rounded-lg md:py-8 mt-8 md:mt-0">
             <h2 class="text-gray-600 text-lg mb-1 font-medium title-font mb-8">
-            Buscá Puntos de venta
+              Buscá Puntos de venta
             </h2>
-            {/* <p class="leading-relaxed mb-5 text-gray-600">
-              Buscá otros puntos de venta
-            </p> */}
             <div className="relative mb-4">
               <div className="relative">
                 <label
