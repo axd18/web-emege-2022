@@ -10,8 +10,7 @@ const Footer = () => {
               <img className="w-20 h-auto" src="/logo-emege.png" />
             </a>
             <p className="mt-2 text-sm text-gray-500">
-              Coppens S.A Calle 5 entre 2 y 4 Parque Ind. Gral. Savio Ruta 88
-              Km. 6,5 (7601) Batán, Mar del Plata, Bs. As., Argentina.
+              Fabricado y distribuido por Coppens.
             </p>
           </div>
           <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
