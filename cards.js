@@ -1,38 +1,35 @@
 export const patagonia = [
 
     {
-        title:'TB 1900',
-        area:'14²',
-        span:'(alto de techo hasta 2,7 m aprox.)',
+        title:'TB 2000 kcal.',
+        area:'40 m³',
         image:'9019.jpg',
         medidas: {
-            alto:'Alto: 61 cm',
-            ancho:'Ancho: 31 cm',
-            profundidad:'Profundidad: 12 cm'
+            alto:'Alto: 63 cm',
+            ancho:'Ancho: 33 cm',
+            profundidad:'Profundidad: 13 cm'
         },
         manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
     },
     {
-        title:'TB o TBU 3000',
-        area:'23²',
-        span:'(altura de techo hasta 2,7 m aprox.)',
-        image:'9030.jpg',
+        title:'TB/TBU 3500 kcal.',
+        area:'70 m³',
+        image:'9035.jpg',
         medidas: {
-            alto:'Alto: 61 cm',
-            ancho:'Ancho: 50 cm',
-            profundidad:'Profundidad: 12 cm'
+            alto:'Alto: 63 cm',
+            ancho:'Ancho: 52 cm',
+            profundidad:'Profundidad: 13 cm'
         },
         manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
     },
     {
-        title:'TB o TBU 5000',
-        area:'37²',
-        span:'(alto de techo hasta 2,7 m aprox.)',
-        image:'9030.jpg',
+        title:'TB/TBU 5500 kcal.',
+        area:'110 m³',
+        image:'9055.jpg',
         medidas: {
-            alto:'Alto: 72,5 cm',
-            ancho:'Ancho: 55 cm',
-            profundidad:'Profundidad: 17,5 cm'
+            alto:'Alto: 63 cm',
+            ancho:'Ancho: 62 cm',
+            profundidad:'Profundidad: 16 cm'
         },
         manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
     }

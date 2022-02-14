@@ -4,13 +4,13 @@ import Layout from "../components/layout/Layout";
 const PuntosDeVenta = () => {
   return (
     <Layout>
-      <section class="text-gray-600 body-font bg-gray-100">
-        <div class="container px-5 py-64 mx-auto flex sm:flex-nowrap flex-wrap">
-          <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative ">
+      <section className="text-gray-600 body-font bg-gray-100">
+        <div className="container px-5 py-64 mx-auto flex sm:flex-nowrap flex-wrap">
+          <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative ">
             <iframe
               width="100%"
               height="100%"
-              class="absolute inset-0"
+              className="absolute inset-0"
               frameborder="0"
               title="map"
               marginheight="0"
@@ -19,8 +19,8 @@ const PuntosDeVenta = () => {
               src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0mardelplata+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
             ></iframe>
           </div>
-          <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full p-8 rounded-lg md:py-8 mt-8 md:mt-0">
-            <h2 class="text-gray-600 text-lg mb-1 font-medium title-font mb-8">
+          <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full p-8 rounded-lg md:py-8 mt-8 md:mt-0">
+            <h2 className="text-gray-600 text-lg mb-1 font-medium title-font mb-8">
               Buscá Puntos de venta
             </h2>
             <div className="relative mb-4">
@@ -61,7 +61,7 @@ const PuntosDeVenta = () => {
                 </select>
               </div>
             </div>
-            <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Buscar
             </button>
           </div>

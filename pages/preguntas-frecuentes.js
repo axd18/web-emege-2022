@@ -24,8 +24,8 @@ const Faq = () => {
           <div className="">
             <div className="mx-auto md:w-1/2 px-4 py-2">
               {faq.map(({ title, texto }, i) => (
-                <details class="mb-4" key={i}>
-                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
+                <details className="mb-4" key={i}>
+                  <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                     {title}
                   </summary>
 

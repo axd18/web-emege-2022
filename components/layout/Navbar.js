@@ -69,7 +69,7 @@ const Navbar = () => {
                     className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer"
                     target="blank"
                   >
-                    <i class="fab fa-instagram fa-2x"></i>
+                    <i className="fab fa-instagram fa-2x"></i>
                   </a>
                 </Link>
               </li>
@@ -79,7 +79,7 @@ const Navbar = () => {
                     className="px-3 py-2 flex items-center text-lg text-gray-600 hover:opacity-75 cursor-pointer"
                     target="blank"
                   >
-                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i className="fab fa-facebook-square fa-2x"></i>
                   </a>
                 </Link>
               </li>
