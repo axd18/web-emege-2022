@@ -9,7 +9,7 @@ export const patagonia = [
             ancho:'Ancho: 33 cm',
             profundidad:'Profundidad: 13 cm'
         },
-        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Nueva%20L%C3%ADnea%20Patagonia.pdf?alt=media&token=c1fabd2b-ef48-4e40-b4d6-619bf3e1ae17'
     },
     {
         title:'TB/TBU 3500 kcal.',
@@ -20,7 +20,7 @@ export const patagonia = [
             ancho:'Ancho: 52 cm',
             profundidad:'Profundidad: 13 cm'
         },
-        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Nueva%20L%C3%ADnea%20Patagonia.pdf?alt=media&token=c1fabd2b-ef48-4e40-b4d6-619bf3e1ae17'
     },
     {
         title:'TB/TBU 5500 kcal.',
@@ -31,7 +31,40 @@ export const patagonia = [
             ancho:'Ancho: 62 cm',
             profundidad:'Profundidad: 16 cm'
         },
-        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Patagonia.pdf?alt=media&token=29c3ccac-f3ca-4bb7-948c-07c850bd5260'
+        manual: 'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/Manual%20Nueva%20L%C3%ADnea%20Patagonia.pdf?alt=media&token=c1fabd2b-ef48-4e40-b4d6-619bf3e1ae17'
+    },
+    {
+        title:'SCE 3000 kcal.',
+        area:'60 m³',
+        image:'9130.jpg',
+        medidas: {
+            alto:'Alto: 63 cm',
+            ancho:'Ancho: 33 cm',
+            profundidad:'Profundidad: 13 cm'
+        },
+        manual: ''
+    },
+    {
+        title:'SCE 5000 kcal.',
+        area:'100 m³',
+        image:'9150.jpg',
+        medidas: {
+            alto:'Alto: 63 cm',
+            ancho:'Ancho: 52 cm',
+            profundidad:'Profundidad: 13 cm'
+        },
+        manual: ''
+    },
+    {
+        title:'SCE 8000 kcal.',
+        area:'160 m³',
+        image:'9180.jpg',
+        medidas: {
+            alto:'Alto: 63 cm',
+            ancho:'Ancho: 62 cm',
+            profundidad:'Profundidad: 16 cm'
+        },
+        manual: ''
     }
 ]
 
