@@ -22,10 +22,10 @@ const Slide = () => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide><img src="/img-main-patagonia.jpg" className="h-screen w-screen object-cover"/></SwiperSlide>
-            <SwiperSlide><img src="/img-main-euro.jpg" className="h-screen w-screen object-cover"/></SwiperSlide>
-            <SwiperSlide><img src="/img-section-main-termos.jpg" className="h-screen w-screen object-cover"/></SwiperSlide>
-            <SwiperSlide><img src="/img-section-main-termos-eco.jpg" className="h-screen w-screen object-cover"/></SwiperSlide>
+            <SwiperSlide><img src="/img-main-patagonia.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide><img src="/img-main-euro.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide><img src="/img-section-main-termos.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
+            <SwiperSlide><img src="/img-section-main-termos-eco.jpg" className="md:h-screen w-screen object-cover md:mt-26"/></SwiperSlide>
         </Swiper>
     );
 }
