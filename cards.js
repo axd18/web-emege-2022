@@ -183,7 +183,7 @@ export const termos = [
         aislacion: 'Aislación: Poliuretano expandido',
         potencia: 'potencia: 1500',
         conexion: 'Conexión de agua: inferior',
-        alto:'alto: 81.5 cm',
+        alto:'alto: 94 cm',
         ancho:'ancho: 43.2 cm',
         image: 'electrico-95.jpg',
         manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-electrico-emege-40-65-90-web.pdf?alt=media&token=45c36864-cd5a-4d8f-a3a3-3773c54a9023'
