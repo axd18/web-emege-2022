@@ -8,9 +8,8 @@ import Swal from 'sweetalert2';
 const Index = () => {
   
   Swal.fire({
-    text: 'Por el momento para comunicarse telefónicamente pueden hacerlo al 223 6348104 (solo llamadas) o al 223 6348098 (llamadas y WhatsApp). Muchas gracias.',
-    confirmButtonColor: '#ef7b0b',
-    focusConfirm: '#ef7b0b'
+    text: 'Por el momento para comunicarse telefónicamente podés hacerlo al 223 6348104 (solo llamadas) o al 223 6348098 (llamadas y WhatsApp). Muchas gracias.',
+    confirmButtonColor: '#ef7b0b'
   });
   
   
