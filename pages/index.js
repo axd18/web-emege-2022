@@ -3,8 +3,17 @@ import Navbar from "../components/layout/Navbar";
 import Slide from "../components/Slide";
 
 import Link from "next/link";
+import Swal from 'sweetalert2';
 
 const Index = () => {
+  
+  Swal.fire({
+    text: 'Por el momento para comunicarse telefónicamente pueden hacerlo al 223 6348104 (solo llamadas) o al 223 6348098 (llamadas y WhatsApp). Muchas gracias.',
+    confirmButtonColor: '#ef7b0b',
+    focusConfirm: '#ef7b0b'
+  });
+  
+  
   return (
     <div className="text-gray-200">
       <Layout>
