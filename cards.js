@@ -109,7 +109,7 @@ export const euro = [
         title:'Sin Salida 3000',
         area:'23²',
         span:'(altura de techo hasta 2,7 m aprox.)',
-        image:'2135.jpg',
+        image:'2120.jpg',
         medidas: {
             alto:'Alto: 61 cm',
             ancho:'Ancho: 31 cm',
@@ -121,7 +121,7 @@ export const euro = [
         title:'Sin Salida 5000',
         area:'37²',
         span:'(altura de techo hasta 2,7 m aprox.)',
-        image:'2155.jpg',
+        image:'2135.jpg',
         medidas: {
             alto:'Alto: 61 cm',
             ancho:'Ancho: 50 cm',
