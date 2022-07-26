@@ -186,7 +186,7 @@ export const termos = [
         alto:'alto: 99 cm',
         ancho:'ancho: 43.2 cm',
         image: 'electrico-95.jpg',
-        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-electrico-emege-40-65-90-web.pdf?alt=media&token=45c36864-cd5a-4d8f-a3a3-3773c54a9023'
+        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-TTQ-electricos-web.pdf?alt=media&token=e42ca624-be1d-4121-9efd-0108b6ba688f'
     },
     {
         title: 'Eléctrico 65 lts.',
@@ -196,7 +196,7 @@ export const termos = [
         alto:'alto: 68 cm',
         ancho:'ancho: 43.3 cm',
         image: 'electrico-65.jpg',
-        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-electrico-emege-40-65-90-web.pdf?alt=media&token=45c36864-cd5a-4d8f-a3a3-3773c54a9023'
+        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-TTQ-electricos-web.pdf?alt=media&token=e42ca624-be1d-4121-9efd-0108b6ba688f'
     },
     {
         title: 'Eléctrico 40 lts.',
@@ -206,7 +206,7 @@ export const termos = [
         alto:'alto: 47 cm',
         ancho:'ancho: 43.3 cm',
         image: 'electrico-40.jpg',
-        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/mini-manual-electrico-emege-40-65-90-web.pdf?alt=media&token=45c36864-cd5a-4d8f-a3a3-3773c54a9023'
+        manual:'https://firebasestorage.googleapis.com/v0/b/emege-c849e.appspot.com/o/manual-TTQ-electricos-web.pdf?alt=media&token=e42ca624-be1d-4121-9efd-0108b6ba688f'
     },
 ]
 
